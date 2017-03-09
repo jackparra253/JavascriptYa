@@ -1,0 +1,37 @@
+<!-- Crear un formulario con tres botones con las leyendas "1", "2" y "3". 
+Mostrar un mensaje indicando qué botón se presionó. -->
+
+<html>
+	<head>
+		<title>Formularios</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var contador1;
+			contador1 = 1;
+			function leyenda1(){
+				alert('Primer boton: '+ contador1);
+			}
+			
+			var contador2;
+			comtador2 = 2;
+			function leyenda2(){
+				alert('Segundo boton: '+ comtador2);
+			}
+			
+			var contador3;
+			comtador3 = 3;
+			function leyenda3(){
+				alert('Tercer boton: '+ comtador3);
+			}
+			
+		</script>
+		<form>
+			<input type="button" OnClick="leyenda1()" value="Boton 1">
+			<input type="button" OnClick="leyenda2()" value="Boton 2">
+			<input type="button" OnClick="leyenda3()" value="Boton 3">
+		</form>
+	</body>
+</html>

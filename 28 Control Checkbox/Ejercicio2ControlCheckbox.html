@@ -1,0 +1,50 @@
+﻿<!--Confeccionar una página que muestre tres checkbox que permitan seleccionar los deportes que practica el usuario (Fútbol, Básket, Tenis) 
+    Mostrar al presionar un botón los deportes que a elegido.-->
+
+<html>
+<head>
+    <title>Control checkbox ejercicio 1</title>
+    <script src="C:\Users\jack\Documents\Jquery\jquery-1.11.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <script type="text/javascript">
+
+        function mostrarDeportes() {
+
+            var deportes = '';
+
+            if (document.getElementById("checkbox1").checked) {
+                deportes = deportes + 'Fútbol ';
+            }
+            if (document.getElementById("checkbox2").checked) {
+                deportes = deportes + 'Básket ';
+            }
+            if (document.getElementById("checkbox3").checked) {
+                deportes = deportes + 'Tenis ';
+            }
+
+            alert('Deportes elegidos: ' + deportes);
+        }
+
+        $(document).ready(function () {
+            $("body").append("<strong>Seleccionar deporte favorito</strong><br/>");
+            $("body").append("<br/>");
+            $("body").append("<input type='checkbox' id='checkbox1'/>Fútbol");
+            $("body").append("<br/>");
+            $("body").append("<input type='checkbox' id='checkbox2'/>Básket");
+            $("body").append("<br/>");
+            $("body").append("<input type='checkbox' id='checkbox3'/>Tenis")
+            $("body").append("<br/>");
+            $("body").append("<input type='button' value='enviar' onclick='mostrarDeportes()' />")
+        });
+    </script>
+
+    
+</body>
+</html>
+
+
+
+
+
+

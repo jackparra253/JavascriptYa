@@ -1,0 +1,50 @@
+﻿<!--Mostrar cuatro objetos de tipo RADIO que permitan seleccionar los estudios que tiene un usuario:  -->
+
+<html>
+<head>
+    <title>Control checkbox ejercicio 1</title>
+    <script src="C:\Users\jack\Documents\Jquery\jquery-1.11.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <script type="text/javascript">
+
+        function mostrar()
+        {
+            if(document.getElementById("radio1").checked)
+            {
+                alert('Tiene estudio de bachiller');
+            }
+            if(document.getElementById("radio2").checked)
+            {
+                alert('Tiene estudio universitario');
+            }
+            if(document.getElementById("radio3").checked)
+            {
+                alert('Tiene estudio de maestria');
+            }
+            if(document.getElementById("radio4").checked)
+            {
+                alert('Tiene estudio de Doctorado');
+            }
+        }
+
+        $(document).ready(function ()
+        {
+            $("body").append("<label>Bachillerato</label> <input type='radio' id='radio1'/> <br/>");
+            $("body").append("<label>Pregrado</label> <input type='radio' id='radio2'/> <br/>");
+            $("body").append("<label>Maestria</label> <input type='radio' id='radio3'/> <br/>");
+            $("body").append("<label>Doctorado</label> <input type='radio' id='radio4'/> <br/>");
+            $("body").append("<input type='button' value='mostrar' onclick='mostrar()'/>")
+        });
+
+        
+    </script>
+ 
+</body>
+</html>
+
+
+
+
+
+

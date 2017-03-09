@@ -1,0 +1,26 @@
+﻿<!--  Codificar una página que permita ingresar una password y luego muestre una ventana de alerta si tiene menos de 5 caracteres. -->
+
+<html>
+	<head>
+		<title>Control password</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+        <script type="text/javascript">
+            function validar() {
+                var pas = document.getElementById('pass').value;
+                if (pas.length < 5) {
+                    alert('Tiene menos de cinco caracteres');
+                } else {
+                    alert('Perfecto');
+                }
+
+            }
+        </script>
+        <form>
+            <label for="pass">Password</label>
+            <input name="pass" type="password" size="10" id="pass"/><br />
+            <input type="button" onclick="validar()" value="enviar"/>
+        </form>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!--Ejemplo: Confeccionar una página que muestre 4 lenguajes de programación que el usuario puede seleccionar si los conoce.
+Luego mostrar un mensaje indicando la cantidad de lenguajes que ha seleccionado el operador.-->
+
+<html>
+<head>
+    <title>Control checkbox ejercicio 1</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        function contarSeleccionados() {
+            var cant = 0;
+            if (document.getElementById('checkbox1').checked) {
+                cant++;
+            }
+            if (document.getElementById('checkbox2').checked) {
+                cant++;
+            }
+            if (document.getElementById('checkbox3').checked) {
+                cant++;
+            }
+            if (document.getElementById('checkbox4').checked) {
+                cant++;
+            }
+
+            document.createElement("div");
+
+            alert('Conoce ' + cant + ' lenguaje(s)');
+        }
+    </script>
+
+    <form>
+        <input type="checkbox" id="checkbox1" /> Javascript
+        <br />
+        <input type="checkbox" id="checkbox2" /> Php
+        <br />
+        <input type="checkbox" id="checkbox3" /> C#
+        <br />
+        <input type="checkbox" id="checkbox4" /> Java
+        <br />
+        <input type="button" value="Mostrar" onclick="contarSeleccionados()" />
+    </form>
+</body>
+</html>
+
+
+
+
+
+

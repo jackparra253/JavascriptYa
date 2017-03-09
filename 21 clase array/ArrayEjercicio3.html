@@ -1,0 +1,43 @@
+<!-- Realizar un programa que pida la carga de dos vectores numéricos. Obtener la suma de los dos vectores, 
+	 dicho resultado guardarlo en un tercer vector del mismo tamaño. Sumar componente a componente.
+	 El tamaño del vector es a elección.. -->
+<html>
+	<head>
+		<title>Array List3</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function vectores(vectorUno, vectorDos, vectorTres){
+				var f;
+				
+				for(f = 0; f < 3; f++){
+						var v1;
+						var v2;
+						var v3;
+						v1 = prompt('Ingrese un número','');
+						vectorUno[f] = parseInt(v1);
+						document.write(vectorUno[f] + '<br/>');
+						v2 = prompt('Ingrese un número','');
+						vectorDos[f] = parseInt(v2);
+						document.write(vectorDos[f] + '<br/>');					
+						vectorTres[f] = vectorUno[f] + vectorDos[f];
+						document.write(vectorTres[f] + '<br/>');
+					}
+				alert('Listo!');
+			}
+			
+			var vectorUno;
+			vectorUno = new Array(2);
+
+			var vectorDos;
+			vectorDos = new Array(2);
+			
+			var vectorTres;
+			vectorTres = new Array(2);
+			
+			vectores(vectorUno, vectorDos, vectorTres);  
+			
+		</script>
+	</body>
+</html>

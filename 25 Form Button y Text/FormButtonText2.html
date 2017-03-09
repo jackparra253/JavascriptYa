@@ -1,0 +1,29 @@
+﻿<!-- Cargar dos números en objetos de tipo text y al presionar un botón, mostrar el mayor. -->
+
+<html>
+	<head>
+		<title>Formulario Ejercicio 1</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+        <script type="text/javascript">
+            function mayor() {
+                var num1 = document.getElementById('numero1').value;
+                var num2 = document.getElementById('numero2').value;
+                    if (num1>num2) {
+                        alert('El número mayor es: ' + num1);
+                    } else{
+                        alert('El número mayor es: ' + num2);
+                    }
+                }
+        </script>
+		<form>
+            <label for="numero1">numero1</label>
+            <input type="text" name="numero1" size="10" id="numero1"/><br />
+            <label for="numero2">numero2</label>
+            <input type="text" name="numero2" size="10" id="numero2"/><br />
+            <input type="button" onclick="mayor()" value="mostrar mayor"/>
+
+        </form>
+	</body>
+</html>

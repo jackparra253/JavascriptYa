@@ -1,0 +1,29 @@
+<!-- Confeccionar una función que reciba dos números y muestre en la página los valores
+ comprendidos entre ellos de uno en uno. Cargar por teclado esos dos valores. --->
+<html>
+	<head>
+		<title>Ejercicio funcion con parametros 1</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	</head>
+	<body>
+		<script type="text/javascript">
+			function mostrarComprendidos(x1,x2){
+				var inicio;
+				for(incio=x1;incio<=x2;inicio++){
+					document.write(inicio +' ');
+				}
+			}
+			
+			var valor1;
+			var valor2;
+			
+			valor1 = prompt('Ingrese el primer número' ,'');
+			valor1 = parseInt(valor1);
+			valor2 = prompt('Ingrese el segundo número' ,'');
+			valor2 = parseInt(valor2);
+			mostrarComprendidos(valor1,valor2);		
+			
+		</script>
+				
+	</body>
+</html>

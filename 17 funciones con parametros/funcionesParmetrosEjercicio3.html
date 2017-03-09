@@ -1,0 +1,41 @@
+<!-- Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor. --->
+<html>
+	<head>
+		<title>Ejercicio funcion con parametros 3</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			function ordenadosMenorMayor(x1,x2,x3){
+				if(x1>x2 && x1>x3 && x2>x3){					
+					document.write(x3 + '-' + x2 + '-' + x1);
+				}else if(x1>x2 && x1>x3 && x3>x2){					
+					document.write(x2 + '-' + x3 + '-' + x1);
+				}else if(x2>x1 && x2>x3 && x1>x3){					
+					document.write(x3 + '-' + x1 + '-' + x2);
+				}else if(x2>x1 && x2>x3 && x3>x1){					
+					document.write(x1 + '-' + x3 + '-' + x2);
+				}else if(x3>x1 && x3>x2 && x1>x2){					
+					document.write(x2 + '-' + x1 + '-' + x3);
+				}else{
+						document.write(x1 + '-' + x2 + '-' + x3);
+				}
+			}
+			
+			var numero1;
+			var numero2;
+			var numero3;
+			
+			numero1 = prompt('Ingrese el primer número','');
+			numero1 = parseInt(numero1);
+			numero2 = prompt('Ingrese el segundo número','');
+			numero2 = parseInt(numero2);
+			numero3 = prompt('Ingrese el tercer número','');
+			numero3 = parseInt(numero3);
+			
+			ordenadosMenorMayor(numero1,numero2,numero3);
+			
+		</script>
+	</body>
+</html>

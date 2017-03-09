@@ -1,0 +1,24 @@
+﻿<!-- Crear un programa que permita cargar un entero en un text y al presionar un botón nos muestre dicho valor elevado al cubo (emplear la función alert). -->
+
+<html>
+	<head>
+		<title>Formulario Ejercicio 1</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<script type="text/javascript">
+            function potencia() {
+                var ent = document.getElementById('entero').value;
+                var potencia;
+                potencia = ent * ent * ent;
+                alert('El resultado es: ' + potencia);
+
+            }
+        </script>
+        <form>
+            <label for="entero">Agregar entero</label>
+            <input type="text" name="entero" size="10" id="entero"/>
+            <input type="button" onclick="potencia()" value="operar"/>
+        </form>
+	</body>
+</html>

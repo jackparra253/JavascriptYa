@@ -1,0 +1,46 @@
+<!-- Desarrollar un programa que permita ingresar un vector de 8 elementos, e informe:
+El valor acumulado de todos los elementos del vector.
+El valor acumulado de los elementos del vector que sean mayores a 36.
+Cantidad de valores mayores a 50.--->
+<html>
+	<head>
+		<title>Ejercicio array 2</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			function ingresar(elemento){
+				var f;
+				for(f=0; f<elemento.length; f++){
+					var v;
+					var suma=0;
+					v = prompt('Ingrese un número:','');
+					elemento[f] = parseInt(v);
+					document.write(elemento[f]+'<br/>');
+					suma = elemento[f];
+					document.write('El total es: ' + suma);
+				}
+			}
+		
+			var elemento;
+			elemento = new Array(4);
+			ingresar(elemento);
+			
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

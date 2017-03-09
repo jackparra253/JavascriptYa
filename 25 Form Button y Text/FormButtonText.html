@@ -1,0 +1,26 @@
+﻿<!-- Confeccionar un formulario que permita ingresar el nombre y edad de una persona -->
+
+<html>
+	<head>
+		<title>Formularios</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<!--<input type="text" title="a" placeholder="b"/><br/>-->
+		<script type="text/javascript">
+			function mostrar(){
+				var nom = document.getElementById('nombre').value;
+				var ed = document.getElementById('edad').value;
+				alert('El valor de nombre es  '+ nom);
+				alert('El vaor de la edad es '+ ed);
+			}
+		</script>
+		Ingrese un nombre: 
+		<input type="text" id="nombre"/><br/>
+		Ingrese edad:
+		<input type="text" id="edad"/>
+		<form>
+			<input type="button" OnClick="mostrar()" value="obtener"/>
+		</form>
+	</body>
+</html>

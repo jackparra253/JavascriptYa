@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+    <title>Ejercicio uno objetos literales</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var cliente1 = {
+        nombre: '',
+        deposito: 0,
+        imprimir: function () {
+            document.write(this.nombre + '<br/>');
+            document.write(this.deposito + '<br/>');
+        },
+        depositar: function (monto) {
+            this.deposito = this.deposito + monto;
+        },
+        extraer: function (monto) {
+            this.deposito = this.deposito - monto;
+        }
+    };
+    cliente1.imprimir();
+    cliente1.depositar(1000);
+    document.write('Estado luego de depositar 1000' + '<br/>');
+    cliente1.extraer(200);
+    </script>
+</body>
+</html>
+
+
+
+

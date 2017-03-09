@@ -1,0 +1,40 @@
+﻿<!-- Crear un objeto que represente los datos de un participante de un juego. Definir las propiedades
+ nombre
+ puntos
+y las funciones:
+imprimir (mostrar el nombre de jugador y los puntos actuales)
+aumentarpuntos (permite incrementar la cantidad de puntos actuales del jugador)
+verificarsigano (mostrar un mensaje si los puntos superan a 1000)-->
+<html>
+<head>
+    <title>Ejercicio dos objetos literales</title>
+</head>
+<body>
+    <script type="text/javascript">
+     var participante ={
+         nombre:'',
+         puntos:'',
+         imprimir: function(){
+             document.write(this.nombre + '<br/>');
+             document.write(this.puntos + '<br/>');
+         },
+         aumentarPuntos:function(puntos){
+             this.aumentarPuntos = this.aumentarPuntos + puntos;
+         },
+         verificarSiGano:function(puntos) {
+             if (puntos>1000) {
+                 document.write('Gano supero los mil puntos');
+             }
+         }
+     };   
+     participante.imprimir();
+     participante.aumentarPuntos(2000);
+     participante.verificarSiGano(2000);
+     participante.imprimir();
+    </script>
+</body>
+</html>
+
+
+
+

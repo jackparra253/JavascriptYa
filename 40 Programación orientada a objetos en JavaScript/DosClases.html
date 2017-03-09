@@ -1,0 +1,51 @@
+﻿
+<!--  -->
+<html>
+<head>
+    <script type="text/javascript">
+        function Numero(nombre) {
+            this.nombre = nombre;
+            this.cagarNumero = cargarNumero;
+            this.verificarSiGano = verificarSiGano;
+        }
+
+        function cargarNumero() {
+            this.numero = prompt('¿Que número quiere?', '');
+        }
+
+        function verificarSiGano(num) {
+            if (this.numero == num) {
+                return true;        
+            } else {
+                return false;
+            }
+        }
+
+        function Balotero() {
+            this.numero = -1;
+            this.sortear = sortear;
+        }
+
+        function sortear() {
+            this.numero = parseInt(Math.random * (10) + 1);
+        }
+    </script>
+</head>
+<body>
+
+    <script type="text/javascript">
+        var numero1;
+        numero1 = new Numero('Juan');
+        numero1.cagarNumero();
+        var balotero1;
+        balotero1 = new Balotero();
+        balotero1.sortear();
+        document.write('Numero sortedo ' + balotero1.numero + '<br/>');
+        document.write(numero1.nombre + ' eligio ' + numero.numero);
+        if (numero1.verificarSiGano(balotero1.numero)) {
+            document.write(numero1.nombre + ' a ganado');
+        }
+    </script>
+
+</body>
+</html>

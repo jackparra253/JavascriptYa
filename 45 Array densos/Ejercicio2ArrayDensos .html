@@ -1,0 +1,36 @@
+﻿<!-- 
+Crear un vector con 10 valores aleatorios comprendidos entre 1 y 500. Luego crear otros dos vectores y copiar los elementos menores a 250 en el segundo vector y los mayores o iguales a 250 en el tercer vector. Imprimir los tamaños del segundo y tercer vector. Imprimir los tres vectores.
+ -->
+<html>
+<head>
+    <title>Ejercicio uno</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var vec1 = [];
+        var f;
+        for (f=0;f<10;f++) {
+          vec1[f] = parseInt(1 + (Math.random()*5000));
+        }
+
+        var vec2 = [];
+        var vec3 = [];
+        var indice1 = 0;
+        var indice2 = 0;
+
+        for(f=0; f<vec1; f++){
+          if(vec1[f]<250){
+            vec2[indice1] = vec1[f];
+            indice1++;
+          }else{
+            vec3[indice2] = vec1[f];
+            indice2++;
+          }
+        }
+    </script>
+</body>
+</html>
+
+
+
+

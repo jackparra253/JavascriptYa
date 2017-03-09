@@ -1,0 +1,32 @@
+﻿<!-- Cargar un nombre y un apellido en sendos text. Al presionar un botón, concatenarlos y mostrarlos en un tercer text 
+    (Tener en cuenta que podemos modificar la propiedad value de un objeto TEXT cuando ocurre un evento) -->
+
+<html>
+	<head>
+		<title>Formulario Ejercicio 1</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	</head>
+	<body>
+        <script type="text/javascript">
+            function concatenar() {
+                var nom = document.getElementById('nombre').value;
+                var apell = document.getElementById('apellido').value;
+                var resul = document.getElementById('resultado').value = nom + ' ' + apell;
+                alert(nom + ' ' + apell);
+            }
+        </script>
+
+        <form class="form-horizontal">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" size="50" id="nombre" /><br />
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" size="50" id="apellido" /><br />
+            <label for="resultado">Resultado</label>
+            <input type="text" name="resultado" size="50" id="resultado" />
+            <input type="button" onclick="concatenar()" value="concatenar" />
+        </form>
+
+	</body>
+</html>

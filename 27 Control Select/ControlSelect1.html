@@ -1,0 +1,31 @@
+﻿<!-- Confeccionar una página que muestre un objeto SELECT con distintos tipos de pizzas (Jamón y Queso, Muzzarella, Morrones).
+        Al seleccionar una, mostrar en un objeto de tipo TEXT el precio de la misma.
+        -->
+
+<html>
+	<head>
+		<title>Control password</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+            <script type="text/javascript">
+                function precioPizza() {
+                    var seleccion = document.getElementById('select1');
+                    document.getElementById('text1').value = seleccion.options[seleccion.selectedIndex].value;
+                }
+            </script>
+
+        <form>
+            <select id="select1" onchange="precioPizza()">
+                <option value="-1">selecciones</option>
+                <option value="2000">Jamón y queso</option>
+                <option value="2500">Muzzarella</option>
+                <option value="3000">Hawainna</option>
+                <option value="3500">Pollo</option>
+            </select>
+            <label>Valor de la pizza: </label>
+            <input type="text" id="text1" />
+        </form>
+
+	</body>
+</html>

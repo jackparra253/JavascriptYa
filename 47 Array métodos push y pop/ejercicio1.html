@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Ejercicios metos push pop</title>
+  </head>
+  <Body>
+    <script>
+      var sueldos = [];
+      var monto;
+      do{
+        monto = prompt('Ingrese el sueldo','');
+        monto = parseInt(monto);
+        if (monto!=0) {
+          sueldos.push(monto);
+        }
+      }while (monto!=0);
+      var suma =  0;
+      for (var  i = 0; i < sueldos.length; i++) {
+          suma = sueldos[i] + suma;
+      }
+      document.write('La cantidad de sueldos ingresados es: ' + suma);
+    </script>
+  </body>
+</html>

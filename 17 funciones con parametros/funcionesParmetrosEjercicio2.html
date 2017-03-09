@@ -1,0 +1,33 @@
+<!-- Elaborar una función a la cual le enviemos tres enteros y muestre el menor. --->
+<html>
+	<head>
+		<title>Ejercicio funcion con parametros 2</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	</head>
+	<body>
+		<script type="text/javascript">
+		
+			function mostrarMenor(x1, x2, x3){
+				if(x1<x2 &&x1<x3){
+					document.write(x1);
+				}else if(x2<x1 && x2<x3){
+					document.write(x2);
+				}else{
+					document.write(x3);
+				}		
+			}
+			
+			var numero1;
+			var numero2;
+			var numero3;
+			
+			numero1 = prompt('Ingrese el primer número','');
+			numero2 = prompt('Ingrese el segundo número','');
+			numero3 = prompt('Ingrese el tercer número', '');
+			
+			mostrarMenor(numero1, numero2, numero3);		
+			
+		</script>
+				
+	</body>
+</html>
